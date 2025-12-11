@@ -20,9 +20,7 @@ class PushRelabel:
         self.adj[v].append(u)
         self.cap[u][v] += w   # Handle multiedges by accumulation
 
-    # ---------------------------------------------------------
     # MAIN MAX-FLOW ROUTINE
-    # ---------------------------------------------------------
     def max_flow(self, s, t):
         n = self.n
         height = [0] * n
