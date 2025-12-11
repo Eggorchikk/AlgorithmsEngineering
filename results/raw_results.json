@@ -1,0 +1,98 @@
+[
+    {
+        "graph": "small",
+        "policy": "fifo",
+        "runtime": 2.574920654296875e-05,
+        "pushes": 4,
+        "relabels": 4,
+        "maxflow": 0
+    },
+    {
+        "graph": "small",
+        "policy": "highest",
+        "runtime": 1.7881393432617188e-05,
+        "pushes": 4,
+        "relabels": 4,
+        "maxflow": 0
+    },
+    {
+        "graph": "small",
+        "policy": "lowest",
+        "runtime": 1.4066696166992188e-05,
+        "pushes": 4,
+        "relabels": 4,
+        "maxflow": 0
+    },
+    {
+        "graph": "small",
+        "policy": "random",
+        "runtime": 2.193450927734375e-05,
+        "pushes": 4,
+        "relabels": 4,
+        "maxflow": 0
+    },
+    {
+        "graph": "medium",
+        "policy": "fifo",
+        "runtime": 0.00179290771484375,
+        "pushes": 497,
+        "relabels": 324,
+        "maxflow": 114
+    },
+    {
+        "graph": "medium",
+        "policy": "highest",
+        "runtime": 0.002315044403076172,
+        "pushes": 587,
+        "relabels": 375,
+        "maxflow": 114
+    },
+    {
+        "graph": "medium",
+        "policy": "lowest",
+        "runtime": 0.002115011215209961,
+        "pushes": 468,
+        "relabels": 354,
+        "maxflow": 114
+    },
+    {
+        "graph": "medium",
+        "policy": "random",
+        "runtime": 0.0018248558044433594,
+        "pushes": 449,
+        "relabels": 316,
+        "maxflow": 114
+    },
+    {
+        "graph": "large",
+        "policy": "fifo",
+        "runtime": 4.175182104110718,
+        "pushes": 2534752,
+        "relabels": 2040847,
+        "maxflow": 16
+    },
+    {
+        "graph": "large",
+        "policy": "highest",
+        "runtime": 4.9378321170806885,
+        "pushes": 2533502,
+        "relabels": 2067128,
+        "maxflow": 16
+    },
+    {
+        "graph": "large",
+        "policy": "lowest",
+        "runtime": 5.011523008346558,
+        "pushes": 2536225,
+        "relabels": 2024809,
+        "maxflow": 16
+    },
+    {
+        "graph": "large",
+        "policy": "random",
+        "runtime": 5.038137197494507,
+        "pushes": 2535069,
+        "relabels": 2016320,
+        "maxflow": 16
+    }
+]

@@ -251,3 +251,29 @@ for build_graph in graphs:
         print("Runtime =", end - start)
         print()
 
+results = []
+
+for graph_name, graph_builder in [
+    ("small", build_small_graph),
+    ("medium", build_medium_graph),
+    ("large", build_large_graph)
+]:
+    for policy in ["fifo", "highest", "lowest", "random"]:
+        g = graph_builder(policy)
+
+        start = time.time()
+        mf = g.max_flow(0, g.n - 1)
+        end = time.time()
+
+        results.append({
+            "graph": graph_name,
+            "policy": policy,
+            "runtime": end - start,
+            "pushes": g.pushes,
+            "relabels": g.relabels,
+            "maxflow": mf
+        })
+
+import json
+with open("results/raw_results.json", "w") as f:
+    json.dump(results, f, indent=4)
