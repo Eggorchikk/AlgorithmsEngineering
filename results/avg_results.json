@@ -3,7 +3,7 @@
         "graph":"large",
         "policy":"fifo",
         "run":5.5,
-        "runtime":2.1276719809,
+        "runtime":2.2063304424,
         "pushes":1281866.6000000001,
         "relabels":982486.0,
         "maxflow":16.2
@@ -12,7 +12,7 @@
         "graph":"large",
         "policy":"highest",
         "run":5.5,
-        "runtime":2.7119940758,
+        "runtime":2.7311890602,
         "pushes":1277025.6000000001,
         "relabels":1026933.6,
         "maxflow":16.2
@@ -21,7 +21,7 @@
         "graph":"large",
         "policy":"lowest",
         "run":5.5,
-        "runtime":2.7149890423,
+        "runtime":2.7140476942,
         "pushes":1273878.8,
         "relabels":1029631.6,
         "maxflow":16.2
@@ -30,7 +30,7 @@
         "graph":"large",
         "policy":"random",
         "run":5.5,
-        "runtime":2.6621726751,
+        "runtime":2.6544551373,
         "pushes":1281986.8,
         "relabels":984347.8,
         "maxflow":16.2
@@ -39,7 +39,7 @@
         "graph":"medium",
         "policy":"fifo",
         "run":5.5,
-        "runtime":0.1062095881,
+        "runtime":0.1230008364,
         "pushes":25767.3,
         "relabels":19018.0,
         "maxflow":186.6
@@ -48,7 +48,7 @@
         "graph":"medium",
         "policy":"highest",
         "run":5.5,
-        "runtime":0.1251155853,
+        "runtime":0.1265084505,
         "pushes":31310.2,
         "relabels":18924.5,
         "maxflow":186.6
@@ -57,7 +57,7 @@
         "graph":"medium",
         "policy":"lowest",
         "run":5.5,
-        "runtime":0.1164739609,
+        "runtime":0.1225306749,
         "pushes":23933.7,
         "relabels":19016.9,
         "maxflow":186.6
@@ -66,7 +66,7 @@
         "graph":"medium",
         "policy":"random",
         "run":5.5,
-        "runtime":0.1108974695,
+        "runtime":0.1118660688,
         "pushes":26037.5,
         "relabels":19052.0,
         "maxflow":186.6
@@ -75,7 +75,7 @@
         "graph":"small",
         "policy":"fifo",
         "run":5.5,
-        "runtime":0.0000204563,
+        "runtime":0.0000173569,
         "pushes":4.3,
         "relabels":4.0,
         "maxflow":0.0
@@ -84,7 +84,7 @@
         "graph":"small",
         "policy":"highest",
         "run":5.5,
-        "runtime":0.0000240564,
+        "runtime":0.0000183821,
         "pushes":4.3,
         "relabels":4.0,
         "maxflow":0.0
@@ -93,7 +93,7 @@
         "graph":"small",
         "policy":"lowest",
         "run":5.5,
-        "runtime":0.0000163317,
+        "runtime":0.0000172377,
         "pushes":4.3,
         "relabels":4.0,
         "maxflow":0.0
@@ -102,7 +102,7 @@
         "graph":"small",
         "policy":"random",
         "run":5.5,
-        "runtime":0.0000140429,
+        "runtime":0.0000142097,
         "pushes":3.1,
         "relabels":3.0,
         "maxflow":0.0

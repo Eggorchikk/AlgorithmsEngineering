@@ -283,7 +283,7 @@ def format_value(val):
     if abs(val) < 0.01 and abs(val) != 0.00:  # choose thresholds
         return f"{val:.2e}"
     else:
-        return f"{val:.2f}"
+        return f"{val:.4f}"
 
 fig, axes = plt.subplots(len(graphs_list), 1, figsize=(10, 4*len(graphs_list)))
 if len(graphs_list) == 1:
