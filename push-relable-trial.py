@@ -1,6 +1,10 @@
+import json
 import random
 from collections import deque
 import time
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 class PushRelabel:
     def __init__(self, n, policy="fifo"):
@@ -232,48 +236,117 @@ def build_large_graph(policy):
     return g
 
 
-graphs = [build_small_graph, build_medium_graph, build_large_graph]
+
+# # Parameters
+runs_per_graph = 10
+graphs_list = [("small", build_small_graph), 
+               ("medium", build_medium_graph), 
+               ("large", build_large_graph)]
 policies = ["fifo", "highest", "lowest", "random"]
+metrics = ["runtime", "pushes", "relabels", "maxflow"]
 
-for build_graph in graphs:
-    print("==== NEW GRAPH ====")
+# ----------------------------
+# Collect all runs
+# ----------------------------
+all_runs = []
+
+for graph_name, builder in graphs_list:
     for policy in policies:
-        g = build_graph(policy)
+        for run_id in range(runs_per_graph):
+            g = builder(policy)
+            start = time.time()
+            mf = g.max_flow(0, g.n-1)
+            end = time.time()
+            all_runs.append({
+                "graph": graph_name,
+                "policy": policy,
+                "run": run_id + 1,
+                "runtime": end - start,
+                "pushes": g.pushes,
+                "relabels": g.relabels,
+                "maxflow": mf
+            })
+
+# Save all runs
+with open("results/all_runs.json", "w") as f:
+    json.dump(all_runs, f, indent=4)
+
+# ----------------------------
+# Compute averages for table
+# ----------------------------
+df_runs = pd.DataFrame(all_runs)
+df_avg = df_runs.groupby(["graph","policy"]).mean().reset_index()
+
+# Save averages
+with open("results/avg_results.json", "w") as f:
+    df_avg.to_json(f, orient="records", indent=4)
+
+# ----------------------------
+# Generate table figure
+# ----------------------------
+def format_value(val):
+    if abs(val) < 0.01 and abs(val) != 0.00:  # choose thresholds
+        return f"{val:.2e}"
+    else:
+        return f"{val:.2f}"
+
+fig, axes = plt.subplots(len(graphs_list), 1, figsize=(10, 4*len(graphs_list)))
+if len(graphs_list) == 1:
+    axes = [axes]
+
+for ax, (graph_name, _) in zip(axes, graphs_list):
+    ax.axis('off')
+    ax.set_title(f"Average Metrics - Graph: {graph_name}", fontsize=14, fontweight='bold')
+    sub_df = df_avg[df_avg['graph'] == graph_name].set_index('policy')[metrics]
+    table_data = [[policy] + [format_value(sub_df.loc[policy, m]) for m in metrics] 
+              for policy in sub_df.index]
+    col_labels = ["Policy"] + metrics
+    table = ax.table(cellText=table_data, colLabels=col_labels, loc='center', cellLoc='center')
+    table.auto_set_font_size(False)
+    table.set_fontsize(12)
+    table.scale(1, 2)
+
+plt.tight_layout()
+plt.savefig("results/avg_metrics_table.png", dpi=300)
+plt.show()
+
+
+# Generate scatter plots
+metrics = ["runtime", "pushes", "relabels", "maxflow"]
+graphs = df_runs['graph'].unique()
+
+sns.set_theme(style="whitegrid", font_scale=1.2)
+
+for metric in metrics:
+    fig, axes = plt.subplots(1, 3, figsize=(18, 5), sharey=False)  # 3 columns for 3 graph sizes
+    fig.suptitle(f"{metric.capitalize()} Across Policies and Graph Sizes", fontsize=16, fontweight='bold')
+    
+    for ax, graph in zip(axes, graphs):
+        df_sub = df_runs[df_runs['graph'] == graph]
         
-        start = time.time()
-        mf = g.max_flow(0, g.n - 1)
-        end = time.time()
+        sns.scatterplot(
+            data=df_sub,
+            x="policy",
+            y=metric,
+            hue="policy",
+            s=100,
+            alpha=0.7,
+            ax=ax
+        )
+        
+        ax.set_title(f"Graph: {graph}")
+        ax.set_xlabel("Policy")
+        ax.set_ylabel(metric.capitalize())
+        
+        # Use log scale for metrics with huge differences
+        if metric in ["runtime", "pushes", "relabels"]:
+            ax.set_yscale("log")
+        
+        ax.legend().remove()  # Remove individual legends for cleaner figure
 
-        print(f"Policy: {policy}")
-        print("Max flow =", mf)
-        print("Pushes =", g.pushes)
-        print("Relabels =", g.relabels)
-        print("Runtime =", end - start)
-        print()
-
-results = []
-
-for graph_name, graph_builder in [
-    ("small", build_small_graph),
-    ("medium", build_medium_graph),
-    ("large", build_large_graph)
-]:
-    for policy in ["fifo", "highest", "lowest", "random"]:
-        g = graph_builder(policy)
-
-        start = time.time()
-        mf = g.max_flow(0, g.n - 1)
-        end = time.time()
-
-        results.append({
-            "graph": graph_name,
-            "policy": policy,
-            "runtime": end - start,
-            "pushes": g.pushes,
-            "relabels": g.relabels,
-            "maxflow": mf
-        })
-
-import json
-with open("results/raw_results.json", "w") as f:
-    json.dump(results, f, indent=4)
+    # Add a single legend outside the subplots
+    handles, labels = axes[0].get_legend_handles_labels()
+    fig.legend(handles, labels, title="Policy", bbox_to_anchor=(0.5, 0.05), loc="lower center", ncol=len(labels))
+    
+    plt.tight_layout(rect=[0, 0.07, 1, 0.95])
+    plt.show()
