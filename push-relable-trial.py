@@ -308,7 +308,6 @@ for ax, (graph_name, _) in zip(axes, graphs_list):
 
 plt.tight_layout()
 plt.savefig("results/avg_metrics_table.png", dpi=300)
-plt.show()
 
 
 # Generate scatter plots
@@ -349,4 +348,4 @@ for metric in metrics:
     fig.legend(handles, labels, title="Policy", bbox_to_anchor=(0.5, 0.05), loc="lower center", ncol=len(labels))
     
     plt.tight_layout(rect=[0, 0.07, 1, 0.95])
-    plt.show()
+plt.show()
