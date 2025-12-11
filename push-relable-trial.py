@@ -153,8 +153,6 @@ def run_all_policies(graph_builder):
 
     
 def build_small_graph(policy):
-    import random
-    random.seed(1)
 
     n = 50
     m = 2   # edges per new node
@@ -181,8 +179,6 @@ def build_small_graph(policy):
 
     return g
 def build_medium_graph(policy):
-    import random
-    random.seed(2)
 
     n = 200
     num_clusters = 4
@@ -211,8 +207,6 @@ def build_medium_graph(policy):
 
     return g
 def build_large_graph(policy):
-    import random
-    random.seed(3)
 
     rows, cols = 40, 40
     n = rows * cols
@@ -253,6 +247,7 @@ all_runs = []
 for graph_name, builder in graphs_list:
     for policy in policies:
         for run_id in range(runs_per_graph):
+            random.seed(run_id + 100)
             g = builder(policy)
             start = time.time()
             mf = g.max_flow(0, g.n-1)

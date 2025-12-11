@@ -3,7 +3,7 @@
         "graph": "small",
         "policy": "fifo",
         "run": 1,
-        "runtime": 2.193450927734375e-05,
+        "runtime": 2.5033950805664062e-05,
         "pushes": 4,
         "relabels": 4,
         "maxflow": 0
@@ -12,8 +12,8 @@
         "graph": "small",
         "policy": "fifo",
         "run": 2,
-        "runtime": 1.4066696166992188e-05,
-        "pushes": 4,
+        "runtime": 2.193450927734375e-05,
+        "pushes": 5,
         "relabels": 4,
         "maxflow": 0
     },
@@ -21,7 +21,7 @@
         "graph": "small",
         "policy": "fifo",
         "run": 3,
-        "runtime": 1.2874603271484375e-05,
+        "runtime": 2.09808349609375e-05,
         "pushes": 4,
         "relabels": 4,
         "maxflow": 0
@@ -30,7 +30,7 @@
         "graph": "small",
         "policy": "fifo",
         "run": 4,
-        "runtime": 1.3113021850585938e-05,
+        "runtime": 1.71661376953125e-05,
         "pushes": 4,
         "relabels": 4,
         "maxflow": 0
@@ -39,7 +39,7 @@
         "graph": "small",
         "policy": "fifo",
         "run": 5,
-        "runtime": 1.2874603271484375e-05,
+        "runtime": 1.5020370483398438e-05,
         "pushes": 4,
         "relabels": 4,
         "maxflow": 0
@@ -48,7 +48,7 @@
         "graph": "small",
         "policy": "fifo",
         "run": 6,
-        "runtime": 1.3113021850585938e-05,
+        "runtime": 2.002716064453125e-05,
         "pushes": 4,
         "relabels": 4,
         "maxflow": 0
@@ -57,8 +57,8 @@
         "graph": "small",
         "policy": "fifo",
         "run": 7,
-        "runtime": 1.3113021850585938e-05,
-        "pushes": 4,
+        "runtime": 3.409385681152344e-05,
+        "pushes": 5,
         "relabels": 4,
         "maxflow": 0
     },
@@ -66,7 +66,7 @@
         "graph": "small",
         "policy": "fifo",
         "run": 8,
-        "runtime": 1.4066696166992188e-05,
+        "runtime": 1.621246337890625e-05,
         "pushes": 4,
         "relabels": 4,
         "maxflow": 0
@@ -75,8 +75,8 @@
         "graph": "small",
         "policy": "fifo",
         "run": 9,
-        "runtime": 1.3828277587890625e-05,
-        "pushes": 4,
+        "runtime": 2.09808349609375e-05,
+        "pushes": 5,
         "relabels": 4,
         "maxflow": 0
     },
@@ -93,6 +93,33 @@
         "graph": "small",
         "policy": "highest",
         "run": 1,
+        "runtime": 8.392333984375e-05,
+        "pushes": 4,
+        "relabels": 4,
+        "maxflow": 0
+    },
+    {
+        "graph": "small",
+        "policy": "highest",
+        "run": 2,
+        "runtime": 2.574920654296875e-05,
+        "pushes": 5,
+        "relabels": 4,
+        "maxflow": 0
+    },
+    {
+        "graph": "small",
+        "policy": "highest",
+        "run": 3,
+        "runtime": 1.4066696166992188e-05,
+        "pushes": 4,
+        "relabels": 4,
+        "maxflow": 0
+    },
+    {
+        "graph": "small",
+        "policy": "highest",
+        "run": 4,
         "runtime": 1.621246337890625e-05,
         "pushes": 4,
         "relabels": 4,
@@ -101,8 +128,8 @@
     {
         "graph": "small",
         "policy": "highest",
-        "run": 2,
-        "runtime": 1.4066696166992188e-05,
+        "run": 5,
+        "runtime": 1.5974044799804688e-05,
         "pushes": 4,
         "relabels": 4,
         "maxflow": 0
@@ -110,7 +137,52 @@
     {
         "graph": "small",
         "policy": "highest",
-        "run": 3,
+        "run": 6,
+        "runtime": 1.9073486328125e-05,
+        "pushes": 4,
+        "relabels": 4,
+        "maxflow": 0
+    },
+    {
+        "graph": "small",
+        "policy": "highest",
+        "run": 7,
+        "runtime": 1.6927719116210938e-05,
+        "pushes": 5,
+        "relabels": 4,
+        "maxflow": 0
+    },
+    {
+        "graph": "small",
+        "policy": "highest",
+        "run": 8,
+        "runtime": 1.5735626220703125e-05,
+        "pushes": 4,
+        "relabels": 4,
+        "maxflow": 0
+    },
+    {
+        "graph": "small",
+        "policy": "highest",
+        "run": 9,
+        "runtime": 1.9788742065429688e-05,
+        "pushes": 5,
+        "relabels": 4,
+        "maxflow": 0
+    },
+    {
+        "graph": "small",
+        "policy": "highest",
+        "run": 10,
+        "runtime": 1.3113021850585938e-05,
+        "pushes": 4,
+        "relabels": 4,
+        "maxflow": 0
+    },
+    {
+        "graph": "small",
+        "policy": "lowest",
+        "run": 1,
         "runtime": 1.2874603271484375e-05,
         "pushes": 4,
         "relabels": 4,
@@ -118,82 +190,10 @@
     },
     {
         "graph": "small",
-        "policy": "highest",
-        "run": 4,
-        "runtime": 1.3113021850585938e-05,
-        "pushes": 4,
-        "relabels": 4,
-        "maxflow": 0
-    },
-    {
-        "graph": "small",
-        "policy": "highest",
-        "run": 5,
-        "runtime": 1.2874603271484375e-05,
-        "pushes": 4,
-        "relabels": 4,
-        "maxflow": 0
-    },
-    {
-        "graph": "small",
-        "policy": "highest",
-        "run": 6,
-        "runtime": 1.4066696166992188e-05,
-        "pushes": 4,
-        "relabels": 4,
-        "maxflow": 0
-    },
-    {
-        "graph": "small",
-        "policy": "highest",
-        "run": 7,
-        "runtime": 1.4066696166992188e-05,
-        "pushes": 4,
-        "relabels": 4,
-        "maxflow": 0
-    },
-    {
-        "graph": "small",
-        "policy": "highest",
-        "run": 8,
-        "runtime": 1.3113021850585938e-05,
-        "pushes": 4,
-        "relabels": 4,
-        "maxflow": 0
-    },
-    {
-        "graph": "small",
-        "policy": "highest",
-        "run": 9,
-        "runtime": 1.3828277587890625e-05,
-        "pushes": 4,
-        "relabels": 4,
-        "maxflow": 0
-    },
-    {
-        "graph": "small",
-        "policy": "highest",
-        "run": 10,
-        "runtime": 1.3828277587890625e-05,
-        "pushes": 4,
-        "relabels": 4,
-        "maxflow": 0
-    },
-    {
-        "graph": "small",
-        "policy": "lowest",
-        "run": 1,
-        "runtime": 1.5020370483398438e-05,
-        "pushes": 4,
-        "relabels": 4,
-        "maxflow": 0
-    },
-    {
-        "graph": "small",
         "policy": "lowest",
         "run": 2,
-        "runtime": 1.4066696166992188e-05,
-        "pushes": 4,
+        "runtime": 1.9073486328125e-05,
+        "pushes": 5,
         "relabels": 4,
         "maxflow": 0
     },
@@ -210,7 +210,7 @@
         "graph": "small",
         "policy": "lowest",
         "run": 4,
-        "runtime": 1.3113021850585938e-05,
+        "runtime": 1.621246337890625e-05,
         "pushes": 4,
         "relabels": 4,
         "maxflow": 0
@@ -219,7 +219,7 @@
         "graph": "small",
         "policy": "lowest",
         "run": 5,
-        "runtime": 1.3113021850585938e-05,
+        "runtime": 1.5974044799804688e-05,
         "pushes": 4,
         "relabels": 4,
         "maxflow": 0
@@ -228,7 +228,7 @@
         "graph": "small",
         "policy": "lowest",
         "run": 6,
-        "runtime": 1.3828277587890625e-05,
+        "runtime": 1.8835067749023438e-05,
         "pushes": 4,
         "relabels": 4,
         "maxflow": 0
@@ -237,8 +237,8 @@
         "graph": "small",
         "policy": "lowest",
         "run": 7,
-        "runtime": 1.3113021850585938e-05,
-        "pushes": 4,
+        "runtime": 1.71661376953125e-05,
+        "pushes": 5,
         "relabels": 4,
         "maxflow": 0
     },
@@ -246,7 +246,7 @@
         "graph": "small",
         "policy": "lowest",
         "run": 8,
-        "runtime": 1.2636184692382812e-05,
+        "runtime": 1.621246337890625e-05,
         "pushes": 4,
         "relabels": 4,
         "maxflow": 0
@@ -255,8 +255,8 @@
         "graph": "small",
         "policy": "lowest",
         "run": 9,
-        "runtime": 1.3113021850585938e-05,
-        "pushes": 4,
+        "runtime": 2.002716064453125e-05,
+        "pushes": 5,
         "relabels": 4,
         "maxflow": 0
     },
@@ -264,7 +264,7 @@
         "graph": "small",
         "policy": "lowest",
         "run": 10,
-        "runtime": 1.2874603271484375e-05,
+        "runtime": 1.3113021850585938e-05,
         "pushes": 4,
         "relabels": 4,
         "maxflow": 0
@@ -273,6 +273,24 @@
         "graph": "small",
         "policy": "random",
         "run": 1,
+        "runtime": 1.0967254638671875e-05,
+        "pushes": 2,
+        "relabels": 2,
+        "maxflow": 0
+    },
+    {
+        "graph": "small",
+        "policy": "random",
+        "run": 2,
+        "runtime": 1.1920928955078125e-05,
+        "pushes": 2,
+        "relabels": 2,
+        "maxflow": 0
+    },
+    {
+        "graph": "small",
+        "policy": "random",
+        "run": 3,
         "runtime": 1.4066696166992188e-05,
         "pushes": 4,
         "relabels": 4,
@@ -281,26 +299,8 @@
     {
         "graph": "small",
         "policy": "random",
-        "run": 2,
-        "runtime": 1.430511474609375e-05,
-        "pushes": 4,
-        "relabels": 4,
-        "maxflow": 0
-    },
-    {
-        "graph": "small",
-        "policy": "random",
-        "run": 3,
-        "runtime": 1.3828277587890625e-05,
-        "pushes": 4,
-        "relabels": 4,
-        "maxflow": 0
-    },
-    {
-        "graph": "small",
-        "policy": "random",
         "run": 4,
-        "runtime": 1.2874603271484375e-05,
+        "runtime": 1.5735626220703125e-05,
         "pushes": 4,
         "relabels": 4,
         "maxflow": 0
@@ -309,7 +309,7 @@
         "graph": "small",
         "policy": "random",
         "run": 5,
-        "runtime": 1.3828277587890625e-05,
+        "runtime": 1.6927719116210938e-05,
         "pushes": 4,
         "relabels": 4,
         "maxflow": 0
@@ -318,7 +318,7 @@
         "graph": "small",
         "policy": "random",
         "run": 6,
-        "runtime": 1.4066696166992188e-05,
+        "runtime": 1.8835067749023438e-05,
         "pushes": 4,
         "relabels": 4,
         "maxflow": 0
@@ -327,26 +327,26 @@
         "graph": "small",
         "policy": "random",
         "run": 7,
-        "runtime": 1.3828277587890625e-05,
-        "pushes": 4,
-        "relabels": 4,
+        "runtime": 1.0013580322265625e-05,
+        "pushes": 2,
+        "relabels": 2,
         "maxflow": 0
     },
     {
         "graph": "small",
         "policy": "random",
         "run": 8,
-        "runtime": 1.4066696166992188e-05,
-        "pushes": 4,
-        "relabels": 4,
+        "runtime": 9.775161743164062e-06,
+        "pushes": 2,
+        "relabels": 2,
         "maxflow": 0
     },
     {
         "graph": "small",
         "policy": "random",
         "run": 9,
-        "runtime": 1.3113021850585938e-05,
-        "pushes": 4,
+        "runtime": 2.002716064453125e-05,
+        "pushes": 5,
         "relabels": 4,
         "maxflow": 0
     },
@@ -354,729 +354,729 @@
         "graph": "small",
         "policy": "random",
         "run": 10,
-        "runtime": 1.4066696166992188e-05,
-        "pushes": 4,
-        "relabels": 4,
+        "runtime": 1.2159347534179688e-05,
+        "pushes": 2,
+        "relabels": 2,
         "maxflow": 0
     },
     {
         "graph": "medium",
         "policy": "fifo",
         "run": 1,
-        "runtime": 0.001950979232788086,
-        "pushes": 497,
-        "relabels": 324,
-        "maxflow": 114
+        "runtime": 0.002580881118774414,
+        "pushes": 593,
+        "relabels": 403,
+        "maxflow": 153
     },
     {
         "graph": "medium",
         "policy": "fifo",
         "run": 2,
-        "runtime": 0.001859903335571289,
-        "pushes": 497,
-        "relabels": 324,
-        "maxflow": 114
+        "runtime": 0.002824068069458008,
+        "pushes": 726,
+        "relabels": 463,
+        "maxflow": 209
     },
     {
         "graph": "medium",
         "policy": "fifo",
         "run": 3,
-        "runtime": 0.0018520355224609375,
-        "pushes": 497,
-        "relabels": 324,
-        "maxflow": 114
+        "runtime": 0.22522926330566406,
+        "pushes": 46100,
+        "relabels": 37487,
+        "maxflow": 206
     },
     {
         "graph": "medium",
         "policy": "fifo",
         "run": 4,
-        "runtime": 0.0017647743225097656,
-        "pushes": 497,
-        "relabels": 324,
-        "maxflow": 114
+        "runtime": 0.0051958560943603516,
+        "pushes": 649,
+        "relabels": 424,
+        "maxflow": 134
     },
     {
         "graph": "medium",
         "policy": "fifo",
         "run": 5,
-        "runtime": 0.0017549991607666016,
-        "pushes": 497,
-        "relabels": 324,
-        "maxflow": 114
+        "runtime": 0.20811009407043457,
+        "pushes": 53184,
+        "relabels": 37477,
+        "maxflow": 157
     },
     {
         "graph": "medium",
         "policy": "fifo",
         "run": 6,
-        "runtime": 0.0017631053924560547,
-        "pushes": 497,
-        "relabels": 324,
-        "maxflow": 114
+        "runtime": 0.0019609928131103516,
+        "pushes": 556,
+        "relabels": 351,
+        "maxflow": 181
     },
     {
         "graph": "medium",
         "policy": "fifo",
         "run": 7,
-        "runtime": 0.001783132553100586,
-        "pushes": 497,
-        "relabels": 324,
-        "maxflow": 114
+        "runtime": 0.20179295539855957,
+        "pushes": 46288,
+        "relabels": 37639,
+        "maxflow": 177
     },
     {
         "graph": "medium",
         "policy": "fifo",
         "run": 8,
-        "runtime": 0.0017659664154052734,
-        "pushes": 497,
-        "relabels": 324,
-        "maxflow": 114
+        "runtime": 0.20167803764343262,
+        "pushes": 55264,
+        "relabels": 37691,
+        "maxflow": 164
     },
     {
         "graph": "medium",
         "policy": "fifo",
         "run": 9,
-        "runtime": 0.0017538070678710938,
-        "pushes": 497,
-        "relabels": 324,
-        "maxflow": 114
+        "runtime": 0.2098376750946045,
+        "pushes": 53476,
+        "relabels": 37740,
+        "maxflow": 307
     },
     {
         "graph": "medium",
         "policy": "fifo",
         "run": 10,
-        "runtime": 0.0017590522766113281,
-        "pushes": 497,
-        "relabels": 324,
-        "maxflow": 114
+        "runtime": 0.002886056900024414,
+        "pushes": 837,
+        "relabels": 505,
+        "maxflow": 178
     },
     {
         "graph": "medium",
         "policy": "highest",
         "run": 1,
-        "runtime": 0.0022902488708496094,
-        "pushes": 587,
-        "relabels": 375,
-        "maxflow": 114
+        "runtime": 0.002471923828125,
+        "pushes": 671,
+        "relabels": 394,
+        "maxflow": 153
     },
     {
         "graph": "medium",
         "policy": "highest",
         "run": 2,
-        "runtime": 0.0022840499877929688,
-        "pushes": 587,
-        "relabels": 375,
-        "maxflow": 114
+        "runtime": 0.0026657581329345703,
+        "pushes": 723,
+        "relabels": 411,
+        "maxflow": 209
     },
     {
         "graph": "medium",
         "policy": "highest",
         "run": 3,
-        "runtime": 0.0022721290588378906,
-        "pushes": 587,
-        "relabels": 375,
-        "maxflow": 114
+        "runtime": 0.23111605644226074,
+        "pushes": 53333,
+        "relabels": 37454,
+        "maxflow": 206
     },
     {
         "graph": "medium",
         "policy": "highest",
         "run": 4,
-        "runtime": 0.002310037612915039,
-        "pushes": 587,
-        "relabels": 375,
-        "maxflow": 114
+        "runtime": 0.002568960189819336,
+        "pushes": 662,
+        "relabels": 385,
+        "maxflow": 134
     },
     {
         "graph": "medium",
         "policy": "highest",
         "run": 5,
-        "runtime": 0.002290010452270508,
-        "pushes": 587,
-        "relabels": 375,
-        "maxflow": 114
+        "runtime": 0.27226686477661133,
+        "pushes": 71329,
+        "relabels": 37422,
+        "maxflow": 157
     },
     {
         "graph": "medium",
         "policy": "highest",
         "run": 6,
-        "runtime": 0.002273082733154297,
-        "pushes": 587,
-        "relabels": 375,
-        "maxflow": 114
+        "runtime": 0.001964092254638672,
+        "pushes": 519,
+        "relabels": 292,
+        "maxflow": 181
     },
     {
         "graph": "medium",
         "policy": "highest",
         "run": 7,
-        "runtime": 0.002279043197631836,
-        "pushes": 587,
-        "relabels": 375,
-        "maxflow": 114
+        "runtime": 0.23683619499206543,
+        "pushes": 53856,
+        "relabels": 37448,
+        "maxflow": 177
     },
     {
         "graph": "medium",
         "policy": "highest",
         "run": 8,
-        "runtime": 0.0022881031036376953,
-        "pushes": 587,
-        "relabels": 375,
-        "maxflow": 114
+        "runtime": 0.23488998413085938,
+        "pushes": 59871,
+        "relabels": 37479,
+        "maxflow": 164
     },
     {
         "graph": "medium",
         "policy": "highest",
         "run": 9,
-        "runtime": 0.0022668838500976562,
-        "pushes": 587,
-        "relabels": 375,
-        "maxflow": 114
+        "runtime": 0.2643449306488037,
+        "pushes": 71566,
+        "relabels": 37645,
+        "maxflow": 307
     },
     {
         "graph": "medium",
         "policy": "highest",
         "run": 10,
-        "runtime": 0.0022690296173095703,
-        "pushes": 587,
-        "relabels": 375,
-        "maxflow": 114
+        "runtime": 0.002031087875366211,
+        "pushes": 572,
+        "relabels": 315,
+        "maxflow": 178
     },
     {
         "graph": "medium",
         "policy": "lowest",
         "run": 1,
-        "runtime": 0.002093076705932617,
-        "pushes": 468,
-        "relabels": 354,
-        "maxflow": 114
+        "runtime": 0.0027923583984375,
+        "pushes": 632,
+        "relabels": 452,
+        "maxflow": 153
     },
     {
         "graph": "medium",
         "policy": "lowest",
         "run": 2,
-        "runtime": 0.0020949840545654297,
-        "pushes": 468,
-        "relabels": 354,
-        "maxflow": 114
+        "runtime": 0.003525257110595703,
+        "pushes": 816,
+        "relabels": 529,
+        "maxflow": 209
     },
     {
         "graph": "medium",
         "policy": "lowest",
         "run": 3,
-        "runtime": 0.0020890235900878906,
-        "pushes": 468,
-        "relabels": 354,
-        "maxflow": 114
+        "runtime": 0.21915602684020996,
+        "pushes": 43132,
+        "relabels": 37594,
+        "maxflow": 206
     },
     {
         "graph": "medium",
         "policy": "lowest",
         "run": 4,
-        "runtime": 0.0020918846130371094,
-        "pushes": 468,
-        "relabels": 354,
-        "maxflow": 114
+        "runtime": 0.0030519962310791016,
+        "pushes": 654,
+        "relabels": 468,
+        "maxflow": 134
     },
     {
         "graph": "medium",
         "policy": "lowest",
         "run": 5,
-        "runtime": 0.002084016799926758,
-        "pushes": 468,
-        "relabels": 354,
-        "maxflow": 114
+        "runtime": 0.231597900390625,
+        "pushes": 49105,
+        "relabels": 37444,
+        "maxflow": 157
     },
     {
         "graph": "medium",
         "policy": "lowest",
         "run": 6,
-        "runtime": 0.002090930938720703,
-        "pushes": 468,
-        "relabels": 354,
-        "maxflow": 114
+        "runtime": 0.002844095230102539,
+        "pushes": 660,
+        "relabels": 461,
+        "maxflow": 181
     },
     {
         "graph": "medium",
         "policy": "lowest",
         "run": 7,
-        "runtime": 0.002087116241455078,
-        "pushes": 468,
-        "relabels": 354,
-        "maxflow": 114
+        "runtime": 0.22125720977783203,
+        "pushes": 43083,
+        "relabels": 37397,
+        "maxflow": 177
     },
     {
         "graph": "medium",
         "policy": "lowest",
         "run": 8,
-        "runtime": 0.002087831497192383,
-        "pushes": 468,
-        "relabels": 354,
-        "maxflow": 114
+        "runtime": 0.24017095565795898,
+        "pushes": 50870,
+        "relabels": 37538,
+        "maxflow": 164
     },
     {
         "graph": "medium",
         "policy": "lowest",
         "run": 9,
-        "runtime": 0.002124786376953125,
-        "pushes": 468,
-        "relabels": 354,
-        "maxflow": 114
+        "runtime": 0.2366189956665039,
+        "pushes": 49616,
+        "relabels": 37756,
+        "maxflow": 307
     },
     {
         "graph": "medium",
         "policy": "lowest",
         "run": 10,
-        "runtime": 0.0020880699157714844,
-        "pushes": 468,
-        "relabels": 354,
-        "maxflow": 114
+        "runtime": 0.003724813461303711,
+        "pushes": 769,
+        "relabels": 530,
+        "maxflow": 178
     },
     {
         "graph": "medium",
         "policy": "random",
         "run": 1,
-        "runtime": 0.0018191337585449219,
-        "pushes": 449,
-        "relabels": 316,
-        "maxflow": 114
+        "runtime": 0.0027048587799072266,
+        "pushes": 684,
+        "relabels": 453,
+        "maxflow": 153
     },
     {
         "graph": "medium",
         "policy": "random",
         "run": 2,
-        "runtime": 0.0018172264099121094,
-        "pushes": 449,
-        "relabels": 316,
-        "maxflow": 114
+        "runtime": 0.003175973892211914,
+        "pushes": 774,
+        "relabels": 483,
+        "maxflow": 209
     },
     {
         "graph": "medium",
         "policy": "random",
         "run": 3,
-        "runtime": 0.0018239021301269531,
-        "pushes": 449,
-        "relabels": 316,
-        "maxflow": 114
+        "runtime": 0.22003912925720215,
+        "pushes": 46633,
+        "relabels": 37762,
+        "maxflow": 206
     },
     {
         "graph": "medium",
         "policy": "random",
         "run": 4,
-        "runtime": 0.0018107891082763672,
-        "pushes": 449,
-        "relabels": 316,
-        "maxflow": 114
+        "runtime": 0.002708911895751953,
+        "pushes": 594,
+        "relabels": 416,
+        "maxflow": 134
     },
     {
         "graph": "medium",
         "policy": "random",
         "run": 5,
-        "runtime": 0.0018069744110107422,
-        "pushes": 449,
-        "relabels": 316,
-        "maxflow": 114
+        "runtime": 0.22029423713684082,
+        "pushes": 53872,
+        "relabels": 37553,
+        "maxflow": 157
     },
     {
         "graph": "medium",
         "policy": "random",
         "run": 6,
-        "runtime": 0.0018138885498046875,
-        "pushes": 449,
-        "relabels": 316,
-        "maxflow": 114
+        "runtime": 0.0022859573364257812,
+        "pushes": 582,
+        "relabels": 376,
+        "maxflow": 181
     },
     {
         "graph": "medium",
         "policy": "random",
         "run": 7,
-        "runtime": 0.0018270015716552734,
-        "pushes": 449,
-        "relabels": 316,
-        "maxflow": 114
+        "runtime": 0.21264195442199707,
+        "pushes": 46341,
+        "relabels": 37576,
+        "maxflow": 177
     },
     {
         "graph": "medium",
         "policy": "random",
         "run": 8,
-        "runtime": 0.0018072128295898438,
-        "pushes": 449,
-        "relabels": 316,
-        "maxflow": 114
+        "runtime": 0.21898698806762695,
+        "pushes": 55782,
+        "relabels": 37668,
+        "maxflow": 164
     },
     {
         "graph": "medium",
         "policy": "random",
         "run": 9,
-        "runtime": 0.0018041133880615234,
-        "pushes": 449,
-        "relabels": 316,
-        "maxflow": 114
+        "runtime": 0.22323989868164062,
+        "pushes": 54334,
+        "relabels": 37736,
+        "maxflow": 307
     },
     {
         "graph": "medium",
         "policy": "random",
         "run": 10,
-        "runtime": 0.0018100738525390625,
-        "pushes": 449,
-        "relabels": 316,
-        "maxflow": 114
+        "runtime": 0.0028967857360839844,
+        "pushes": 779,
+        "relabels": 497,
+        "maxflow": 178
     },
     {
         "graph": "large",
         "policy": "fifo",
         "run": 1,
-        "runtime": 4.164273023605347,
-        "pushes": 2534752,
-        "relabels": 2040847,
-        "maxflow": 16
+        "runtime": 4.445243835449219,
+        "pushes": 2547063,
+        "relabels": 1985037,
+        "maxflow": 15
     },
     {
         "graph": "large",
         "policy": "fifo",
         "run": 2,
-        "runtime": 4.684190034866333,
-        "pushes": 2534752,
-        "relabels": 2040847,
-        "maxflow": 16
+        "runtime": 4.245363235473633,
+        "pushes": 2552283,
+        "relabels": 1969551,
+        "maxflow": 19
     },
     {
         "graph": "large",
         "policy": "fifo",
         "run": 3,
-        "runtime": 4.142774820327759,
-        "pushes": 2534752,
-        "relabels": 2040847,
-        "maxflow": 16
+        "runtime": 4.156503677368164,
+        "pushes": 2561583,
+        "relabels": 1911372,
+        "maxflow": 10
     },
     {
         "graph": "large",
         "policy": "fifo",
         "run": 4,
-        "runtime": 4.189935922622681,
-        "pushes": 2534752,
-        "relabels": 2040847,
-        "maxflow": 16
+        "runtime": 0.03717684745788574,
+        "pushes": 21724,
+        "relabels": 19330,
+        "maxflow": 22
     },
     {
         "graph": "large",
         "policy": "fifo",
         "run": 5,
-        "runtime": 4.687313795089722,
-        "pushes": 2534752,
-        "relabels": 2040847,
-        "maxflow": 16
+        "runtime": 0.009850025177001953,
+        "pushes": 5321,
+        "relabels": 5121,
+        "maxflow": 8
     },
     {
         "graph": "large",
         "policy": "fifo",
         "run": 6,
-        "runtime": 4.162045240402222,
-        "pushes": 2534752,
-        "relabels": 2040847,
-        "maxflow": 16
+        "runtime": 4.133312940597534,
+        "pushes": 2537217,
+        "relabels": 1994827,
+        "maxflow": 28
     },
     {
         "graph": "large",
         "policy": "fifo",
         "run": 7,
-        "runtime": 4.215065002441406,
-        "pushes": 2534752,
-        "relabels": 2040847,
-        "maxflow": 16
+        "runtime": 0.02347397804260254,
+        "pushes": 13638,
+        "relabels": 12485,
+        "maxflow": 17
     },
     {
         "graph": "large",
         "policy": "fifo",
         "run": 8,
-        "runtime": 4.176393985748291,
-        "pushes": 2534752,
-        "relabels": 2040847,
-        "maxflow": 16
+        "runtime": 4.189267158508301,
+        "pushes": 2559399,
+        "relabels": 1908257,
+        "maxflow": 18
     },
     {
         "graph": "large",
         "policy": "fifo",
         "run": 9,
-        "runtime": 4.218200206756592,
-        "pushes": 2534752,
-        "relabels": 2040847,
-        "maxflow": 16
+        "runtime": 0.00871419906616211,
+        "pushes": 4574,
+        "relabels": 4418,
+        "maxflow": 8
     },
     {
         "graph": "large",
         "policy": "fifo",
         "run": 10,
-        "runtime": 4.1782450675964355,
-        "pushes": 2534752,
-        "relabels": 2040847,
-        "maxflow": 16
+        "runtime": 0.02781391143798828,
+        "pushes": 15864,
+        "relabels": 14462,
+        "maxflow": 17
     },
     {
         "graph": "large",
         "policy": "highest",
         "run": 1,
-        "runtime": 4.95528507232666,
-        "pushes": 2533502,
-        "relabels": 2067128,
-        "maxflow": 16
+        "runtime": 5.286010980606079,
+        "pushes": 2538937,
+        "relabels": 2048904,
+        "maxflow": 15
     },
     {
         "graph": "large",
         "policy": "highest",
         "run": 2,
-        "runtime": 4.916767835617065,
-        "pushes": 2533502,
-        "relabels": 2067128,
-        "maxflow": 16
+        "runtime": 5.4497668743133545,
+        "pushes": 2544791,
+        "relabels": 2063767,
+        "maxflow": 19
     },
     {
         "graph": "large",
         "policy": "highest",
         "run": 3,
-        "runtime": 5.48044490814209,
-        "pushes": 2533502,
-        "relabels": 2067128,
-        "maxflow": 16
+        "runtime": 5.730393886566162,
+        "pushes": 2542699,
+        "relabels": 2051380,
+        "maxflow": 10
     },
     {
         "graph": "large",
         "policy": "highest",
         "run": 4,
-        "runtime": 5.2398881912231445,
-        "pushes": 2533502,
-        "relabels": 2067128,
-        "maxflow": 16
+        "runtime": 0.046730995178222656,
+        "pushes": 20404,
+        "relabels": 17885,
+        "maxflow": 22
     },
     {
         "graph": "large",
         "policy": "highest",
         "run": 5,
-        "runtime": 4.985408782958984,
-        "pushes": 2533502,
-        "relabels": 2067128,
-        "maxflow": 16
+        "runtime": 0.01088404655456543,
+        "pushes": 4981,
+        "relabels": 4823,
+        "maxflow": 8
     },
     {
         "graph": "large",
         "policy": "highest",
         "run": 6,
-        "runtime": 4.948422193527222,
-        "pushes": 2533502,
-        "relabels": 2067128,
-        "maxflow": 16
+        "runtime": 4.928123950958252,
+        "pushes": 2536279,
+        "relabels": 2056538,
+        "maxflow": 28
     },
     {
         "graph": "large",
         "policy": "highest",
         "run": 7,
-        "runtime": 5.039724111557007,
-        "pushes": 2533502,
-        "relabels": 2067128,
-        "maxflow": 16
+        "runtime": 0.029176950454711914,
+        "pushes": 13258,
+        "relabels": 12187,
+        "maxflow": 17
     },
     {
         "graph": "large",
         "policy": "highest",
         "run": 8,
-        "runtime": 5.280113697052002,
-        "pushes": 2533502,
-        "relabels": 2067128,
-        "maxflow": 16
+        "runtime": 5.594142198562622,
+        "pushes": 2549090,
+        "relabels": 1995805,
+        "maxflow": 18
     },
     {
         "graph": "large",
         "policy": "highest",
         "run": 9,
-        "runtime": 5.228255033493042,
-        "pushes": 2533502,
-        "relabels": 2067128,
-        "maxflow": 16
+        "runtime": 0.009931087493896484,
+        "pushes": 4143,
+        "relabels": 3991,
+        "maxflow": 8
     },
     {
         "graph": "large",
         "policy": "highest",
         "run": 10,
-        "runtime": 5.072798013687134,
-        "pushes": 2533502,
-        "relabels": 2067128,
-        "maxflow": 16
+        "runtime": 0.03477978706359863,
+        "pushes": 15674,
+        "relabels": 14056,
+        "maxflow": 17
     },
     {
         "graph": "large",
         "policy": "lowest",
         "run": 1,
-        "runtime": 5.060083866119385,
-        "pushes": 2536225,
-        "relabels": 2024809,
-        "maxflow": 16
+        "runtime": 5.175105094909668,
+        "pushes": 2532598,
+        "relabels": 2048037,
+        "maxflow": 15
     },
     {
         "graph": "large",
         "policy": "lowest",
         "run": 2,
-        "runtime": 5.229659080505371,
-        "pushes": 2536225,
-        "relabels": 2024809,
-        "maxflow": 16
+        "runtime": 5.450518846511841,
+        "pushes": 2539658,
+        "relabels": 2054440,
+        "maxflow": 19
     },
     {
         "graph": "large",
         "policy": "lowest",
         "run": 3,
-        "runtime": 5.133840084075928,
-        "pushes": 2536225,
-        "relabels": 2024809,
-        "maxflow": 16
+        "runtime": 5.889784812927246,
+        "pushes": 2540853,
+        "relabels": 2081122,
+        "maxflow": 10
     },
     {
         "graph": "large",
         "policy": "lowest",
         "run": 4,
-        "runtime": 5.045613050460815,
-        "pushes": 2536225,
-        "relabels": 2024809,
-        "maxflow": 16
+        "runtime": 0.04522085189819336,
+        "pushes": 19571,
+        "relabels": 18099,
+        "maxflow": 22
     },
     {
         "graph": "large",
         "policy": "lowest",
         "run": 5,
-        "runtime": 5.121359825134277,
-        "pushes": 2536225,
-        "relabels": 2024809,
-        "maxflow": 16
+        "runtime": 0.009298324584960938,
+        "pushes": 4009,
+        "relabels": 3929,
+        "maxflow": 8
     },
     {
         "graph": "large",
         "policy": "lowest",
         "run": 6,
-        "runtime": 5.317872047424316,
-        "pushes": 2536225,
-        "relabels": 2024809,
-        "maxflow": 16
+        "runtime": 5.067361116409302,
+        "pushes": 2534452,
+        "relabels": 2001260,
+        "maxflow": 28
     },
     {
         "graph": "large",
         "policy": "lowest",
         "run": 7,
-        "runtime": 5.099260091781616,
-        "pushes": 2536225,
-        "relabels": 2024809,
-        "maxflow": 16
+        "runtime": 0.02442789077758789,
+        "pushes": 10975,
+        "relabels": 10281,
+        "maxflow": 17
     },
     {
         "graph": "large",
         "policy": "lowest",
         "run": 8,
-        "runtime": 5.0255348682403564,
-        "pushes": 2536225,
-        "relabels": 2024809,
-        "maxflow": 16
+        "runtime": 5.445932865142822,
+        "pushes": 2537372,
+        "relabels": 2061081,
+        "maxflow": 18
     },
     {
         "graph": "large",
         "policy": "lowest",
         "run": 9,
-        "runtime": 5.062747955322266,
-        "pushes": 2536225,
-        "relabels": 2024809,
-        "maxflow": 16
+        "runtime": 0.009850740432739258,
+        "pushes": 4328,
+        "relabels": 4206,
+        "maxflow": 8
     },
     {
         "graph": "large",
         "policy": "lowest",
         "run": 10,
-        "runtime": 5.056612014770508,
-        "pushes": 2536225,
-        "relabels": 2024809,
-        "maxflow": 16
+        "runtime": 0.03238987922668457,
+        "pushes": 14972,
+        "relabels": 13861,
+        "maxflow": 17
     },
     {
         "graph": "large",
         "policy": "random",
         "run": 1,
-        "runtime": 5.202363729476929,
-        "pushes": 2535069,
-        "relabels": 2016320,
-        "maxflow": 16
+        "runtime": 5.233293056488037,
+        "pushes": 2544450,
+        "relabels": 2001059,
+        "maxflow": 15
     },
     {
         "graph": "large",
         "policy": "random",
         "run": 2,
-        "runtime": 5.0962841510772705,
-        "pushes": 2535069,
-        "relabels": 2016320,
-        "maxflow": 16
+        "runtime": 5.225990295410156,
+        "pushes": 2553471,
+        "relabels": 1955034,
+        "maxflow": 19
     },
     {
         "graph": "large",
         "policy": "random",
         "run": 3,
-        "runtime": 5.118859052658081,
-        "pushes": 2535069,
-        "relabels": 2016320,
-        "maxflow": 16
+        "runtime": 5.259979009628296,
+        "pushes": 2565902,
+        "relabels": 1876774,
+        "maxflow": 10
     },
     {
         "graph": "large",
         "policy": "random",
         "run": 4,
-        "runtime": 5.112195014953613,
-        "pushes": 2535069,
-        "relabels": 2016320,
-        "maxflow": 16
+        "runtime": 0.05254197120666504,
+        "pushes": 23529,
+        "relabels": 20719,
+        "maxflow": 22
     },
     {
         "graph": "large",
         "policy": "random",
         "run": 5,
-        "runtime": 5.081729173660278,
-        "pushes": 2535069,
-        "relabels": 2016320,
-        "maxflow": 16
+        "runtime": 0.014265060424804688,
+        "pushes": 6201,
+        "relabels": 5974,
+        "maxflow": 8
     },
     {
         "graph": "large",
         "policy": "random",
         "run": 6,
-        "runtime": 5.071491003036499,
-        "pushes": 2535069,
-        "relabels": 2016320,
-        "maxflow": 16
+        "runtime": 5.408421993255615,
+        "pushes": 2534034,
+        "relabels": 2010261,
+        "maxflow": 28
     },
     {
         "graph": "large",
         "policy": "random",
         "run": 7,
-        "runtime": 5.113736867904663,
-        "pushes": 2535069,
-        "relabels": 2016320,
-        "maxflow": 16
+        "runtime": 0.03724408149719238,
+        "pushes": 17453,
+        "relabels": 15797,
+        "maxflow": 17
     },
     {
         "graph": "large",
         "policy": "random",
         "run": 8,
-        "runtime": 5.123567819595337,
-        "pushes": 2535069,
-        "relabels": 2016320,
-        "maxflow": 16
+        "runtime": 5.348837852478027,
+        "pushes": 2555986,
+        "relabels": 1940577,
+        "maxflow": 18
     },
     {
         "graph": "large",
         "policy": "random",
         "run": 9,
-        "runtime": 5.095062732696533,
-        "pushes": 2535069,
-        "relabels": 2016320,
-        "maxflow": 16
+        "runtime": 0.009459257125854492,
+        "pushes": 4216,
+        "relabels": 4083,
+        "maxflow": 8
     },
     {
         "graph": "large",
         "policy": "random",
         "run": 10,
-        "runtime": 5.094638109207153,
-        "pushes": 2535069,
-        "relabels": 2016320,
-        "maxflow": 16
+        "runtime": 0.03169417381286621,
+        "pushes": 14626,
+        "relabels": 13200,
+        "maxflow": 17
     }
 ]
