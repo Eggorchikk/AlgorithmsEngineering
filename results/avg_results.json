@@ -3,108 +3,120 @@
         "graph":"large",
         "policy":"fifo",
         "run":5.5,
-        "runtime":2.2063304424,
+        "runtime":2.0877168894,
         "pushes":1281866.6000000001,
         "relabels":982486.0,
-        "maxflow":16.2
+        "maxflow":16.2,
+        "run_jitter":0.0010109535
     },
     {
         "graph":"large",
         "policy":"highest",
         "run":5.5,
-        "runtime":2.7311890602,
+        "runtime":2.6561039448,
         "pushes":1277025.6000000001,
         "relabels":1026933.6,
-        "maxflow":16.2
+        "maxflow":16.2,
+        "run_jitter":0.0010109535
     },
     {
         "graph":"large",
         "policy":"lowest",
         "run":5.5,
-        "runtime":2.7140476942,
+        "runtime":2.7146236897,
         "pushes":1273878.8,
         "relabels":1029631.6,
-        "maxflow":16.2
+        "maxflow":16.2,
+        "run_jitter":0.0010109535
     },
     {
         "graph":"large",
         "policy":"random",
         "run":5.5,
-        "runtime":2.6544551373,
+        "runtime":2.5814435482,
         "pushes":1281986.8,
         "relabels":984347.8,
-        "maxflow":16.2
+        "maxflow":16.2,
+        "run_jitter":0.0010109535
     },
     {
         "graph":"medium",
         "policy":"fifo",
         "run":5.5,
-        "runtime":0.1230008364,
+        "runtime":0.1012074471,
         "pushes":25767.3,
         "relabels":19018.0,
-        "maxflow":186.6
+        "maxflow":186.6,
+        "run_jitter":-0.02354696
     },
     {
         "graph":"medium",
         "policy":"highest",
         "run":5.5,
-        "runtime":0.1265084505,
+        "runtime":0.1235135794,
         "pushes":31310.2,
         "relabels":18924.5,
-        "maxflow":186.6
+        "maxflow":186.6,
+        "run_jitter":-0.02354696
     },
     {
         "graph":"medium",
         "policy":"lowest",
         "run":5.5,
-        "runtime":0.1225306749,
+        "runtime":0.1673370123,
         "pushes":23933.7,
         "relabels":19016.9,
-        "maxflow":186.6
+        "maxflow":186.6,
+        "run_jitter":-0.02354696
     },
     {
         "graph":"medium",
         "policy":"random",
         "run":5.5,
-        "runtime":0.1118660688,
+        "runtime":0.1140573025,
         "pushes":26037.5,
         "relabels":19052.0,
-        "maxflow":186.6
+        "maxflow":186.6,
+        "run_jitter":-0.02354696
     },
     {
         "graph":"small",
         "policy":"fifo",
         "run":5.5,
-        "runtime":0.0000173569,
-        "pushes":4.3,
-        "relabels":4.0,
-        "maxflow":0.0
+        "runtime":0.0015799999,
+        "pushes":689.3,
+        "relabels":619.7,
+        "maxflow":5.2,
+        "run_jitter":0.0276456583
     },
     {
         "graph":"small",
         "policy":"highest",
         "run":5.5,
-        "runtime":0.0000183821,
-        "pushes":4.3,
-        "relabels":4.0,
-        "maxflow":0.0
+        "runtime":0.0016622782,
+        "pushes":685.8,
+        "relabels":627.5,
+        "maxflow":5.2,
+        "run_jitter":0.0276456583
     },
     {
         "graph":"small",
         "policy":"lowest",
         "run":5.5,
-        "runtime":0.0000172377,
-        "pushes":4.3,
-        "relabels":4.0,
-        "maxflow":0.0
+        "runtime":0.0015984774,
+        "pushes":694.0,
+        "relabels":584.4,
+        "maxflow":5.2,
+        "run_jitter":0.0276456583
     },
     {
         "graph":"small",
         "policy":"random",
         "run":5.5,
-        "runtime":0.0000142097,
-        "pushes":3.1,
-        "relabels":3.0,
-        "maxflow":0.0
+        "runtime":0.0016203642,
+        "pushes":694.2,
+        "relabels":616.3,
+        "maxflow":5.2,
+        "run_jitter":0.0276456583
     }
 ]

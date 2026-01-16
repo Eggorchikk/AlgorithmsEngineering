@@ -5,6 +5,7 @@ import time
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+import numpy as np
 
 class PushRelabel:
     def __init__(self, n, policy="fifo"):
@@ -176,7 +177,8 @@ def build_small_graph(policy):
             g.add_edge(new, t, cap)
         degree_list.extend(targets)
         degree_list.extend([new] * m)
-
+    for i in range(n - 1):
+        g.add_edge(i, i + 1, random.randint(5, 30))
     return g
 def build_medium_graph(policy):
 
@@ -270,6 +272,15 @@ with open("results/all_runs.json", "w") as f:
 # Compute averages for table
 # ----------------------------
 df_runs = pd.DataFrame(all_runs)
+
+def generate_jitter(row):
+    rng = np.random.default_rng(
+        hash((row["graph"], row["run"])) % (2**32)
+    )
+    return rng.uniform(-0.15, 0.15)
+
+df_runs["run_jitter"] = df_runs.apply(generate_jitter, axis=1)
+
 df_avg = df_runs.groupby(["graph","policy"]).mean().reset_index()
 
 # Save averages
@@ -318,15 +329,28 @@ for metric in metrics:
     for ax, graph in zip(axes, graphs):
         df_sub = df_runs[df_runs['graph'] == graph]
         
+        df_sub["policy_code"] = (
+            df_sub["policy"].astype("category")
+            .cat.set_categories(policies)
+            .cat.codes
+        )
+
+        df_sub["policy_jitter"] = df_sub["policy_code"] + df_sub["run_jitter"]
+
+
         sns.scatterplot(
-            data=df_sub,
-            x="policy",
+            x="policy_jitter",
             y=metric,
             hue="policy",
-            s=100,
-            alpha=0.7,
+            data=df_sub,
+            s=80,
+            alpha=0.6,
             ax=ax
         )
+
+        ax.set_xticks(range(len(policies)))
+        ax.set_xticklabels(policies)
+
         
         ax.set_title(f"Graph: {graph}")
         ax.set_xlabel("Policy")
